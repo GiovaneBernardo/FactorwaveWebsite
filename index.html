@@ -57,9 +57,18 @@
     }
 
     .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       font-size: 18px;
       font-weight: 700;
       letter-spacing: 0;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
     }
 
     .nav-links {
@@ -334,7 +343,10 @@
 <body>
   <header>
     <div class="wrap nav">
-      <div class="brand">Factorwave Press Kit</div>
+      <div class="brand">
+        <img src="assets/Logo.png" alt="" aria-hidden="true">
+        <span>Factorwave Press Kit</span>
+      </div>
       <nav class="nav-links" aria-label="Press kit sections">
         <a href="#overview">Overview</a>
         <a href="#facts">Facts</a>
@@ -411,6 +423,8 @@
             <div class="fact"><strong>Developer</strong><span>Plaza Studio</span></div>
             <div class="fact"><strong>Publisher</strong><span>Plaza Studio</span></div>
             <div class="fact"><strong>Release</strong><span>Coming soon, 2026</span></div>
+            <div class="fact"><strong>Availability</strong><span>Free demo available now on Steam</span></div>
+            <div class="fact"><strong>Early Access</strong><span>Not available yet</span></div>
             <div class="fact"><strong>Platforms</strong><span>PC via Steam</span></div>
             <div class="fact"><strong>Genres</strong><span>Indie, Simulation</span></div>
             <div class="fact"><strong>Modes</strong><span>Single-player</span></div>
@@ -527,8 +541,8 @@
       <div class="wrap two-col">
         <div>
           <h2>Contact</h2>
-          <p class="lead">For review keys, interviews, and press inquiries, contact Plaza Studio. Join the Discord for
-            announcements and development updates.</p>
+          <p class="lead">Factorwave is currently available as a free demo on Steam. For interviews, coverage, and press
+            inquiries, contact Plaza Studio. Join the Discord for announcements and development updates.</p>
         </div>
         <div class="contact-card">
           <h3>Press Contact</h3>
