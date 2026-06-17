@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Factorwave Press Kit</title>
   <meta name="description"
-    content="Press kit for Factorwave, a fast-paced factory builder with combat and territorial logistics by Plaza Studio.">
+    content="Press kit for Factorwave, a fast-paced factory builder with combat and territorial logistics">
   <style>
     :root {
       color-scheme: dark;
@@ -16,8 +16,9 @@
       --text: #f1f4f7;
       --muted: #aeb7c2;
       --line: #303844;
-      --accent: #f0b84a;
-      --accent-2: #54c6a1;
+      --accent: #ff8a00;
+      --accent-2: #1582ff;
+      --accent-cyan: #31d7ff;
       --max: 1120px;
     }
 
@@ -44,7 +45,7 @@
 
     header {
       border-bottom: 1px solid var(--line);
-      background: #15191f;
+      background: #111820;
     }
 
     .nav {
@@ -87,7 +88,7 @@
 
     .eyebrow {
       margin: 0 0 12px;
-      color: var(--accent);
+      color: var(--accent-cyan);
       font-size: 13px;
       font-weight: 700;
       letter-spacing: 0.08em;
@@ -150,9 +151,22 @@
     }
 
     .button.primary {
-      border-color: #d99d32;
+      border-color: #ff9b1f;
       background: var(--accent);
-      color: #17120a;
+      color: #160d05;
+    }
+
+    .button.secondary {
+      border-color: #267fe8;
+      background: var(--accent-2);
+      color: #f8fbff;
+    }
+
+    .download-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 18px 0 28px;
     }
 
     .media-frame {
@@ -246,8 +260,43 @@
       gap: 16px;
     }
 
-    .asset-grid .placeholder {
-      min-height: 190px;
+    .asset-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .asset-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #0d1116;
+    }
+
+    .asset-card.logo img {
+      object-fit: contain;
+      padding: 22px;
+    }
+
+    .asset-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .asset-info h3 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .asset-info .button {
+      min-height: 36px;
+      padding: 7px 10px;
+      font-size: 13px;
     }
 
     footer {
@@ -304,7 +353,9 @@
           powerful Sector Hub bonuses, defend your infrastructure, and expand across a hostile planet.</p>
         <div class="actions">
           <a class="button primary" href="https://store.steampowered.com/app/4428900/Factorwave/">View on Steam</a>
-          <a class="button" href="#assets">Download assets</a>
+          <a class="button secondary" href="#assets">Download media assets</a>
+          <a class="button" href="https://drive.google.com/file/d/1HZkYJzjMc_5zLjrWxOpFGy-lRebf7Ofv/view?usp=sharing"
+            target="_blank" rel="noopener">Press Kit ZIP</a>
         </div>
       </div>
       <div class="media-frame">
@@ -326,9 +377,8 @@
           <p>The game blends factory planning with active defense and map control, giving players a compact loop of
             building, optimizing, expanding, and holding the line.</p>
         </div>
-        <div class="placeholder">
-          Trailer embed placeholder<br>
-          Add a YouTube, Steam, or local video embed here later.
+        <div class="media-frame">
+          <img src="assets/1080pThumbnail.png" alt="Factorwave trailer still showing factory production">
         </div>
       </div>
     </section>
@@ -377,13 +427,98 @@
     <section id="assets">
       <div class="wrap">
         <h2>Media Assets</h2>
+        <p class="lead">Preview selected press assets below, or download the complete image pack as a ZIP.</p>
+        <div class="download-options" aria-label="Full press kit downloads">
+          <a class="button primary"
+            href="https://drive.google.com/file/d/1HZkYJzjMc_5zLjrWxOpFGy-lRebf7Ofv/view?usp=sharing" target="_blank"
+            rel="noopener">Download ZIP from Google Drive</a>
+          <a class="button secondary" href="https://www.mediafire.com/file/vettriicjtl5wr7/FactorwavePressKit.zip/file"
+            target="_blank" rel="noopener">Download ZIP from MediaFire</a>
+        </div>
         <div class="asset-grid">
-          <div class="placeholder">Logo placeholder</div>
-          <div class="placeholder">Screenshot placeholder</div>
-          <div class="placeholder">Screenshot placeholder</div>
-          <div class="placeholder">Screenshot placeholder</div>
-          <div class="placeholder">Key art placeholder</div>
-          <div class="placeholder">Trailer thumbnail placeholder</div>
+          <article class="asset-card logo">
+            <a href="assets/Logo.png" download>
+              <img src="assets/Logo.png" alt="Factorwave square app icon with FW gear mark">
+            </a>
+            <div class="asset-info">
+              <h3>App Icon</h3>
+              <a class="button" href="assets/Logo.png" download>Download</a>
+            </div>
+          </article>
+          <article class="asset-card logo">
+            <a href="assets/LogoExtended.png" download>
+              <img src="assets/LogoExtended.png" alt="Full Factorwave logo with FW gear mark">
+            </a>
+            <div class="asset-info">
+              <h3>Full Logo</h3>
+              <a class="button" href="assets/LogoExtended.png" download>Download</a>
+            </div>
+          </article>
+          <article class="asset-card">
+            <a href="assets/screenshots/Full.png" download>
+              <img src="assets/screenshots/Full.png" alt="Factorwave factory overview screenshot">
+            </a>
+            <div class="asset-info">
+              <h3>Factory Overview</h3>
+              <a class="button" href="assets/screenshots/Full.png" download>Download</a>
+            </div>
+          </article>
+          <article class="asset-card">
+            <a href="assets/screenshots/Steam1.png" download>
+              <img src="assets/screenshots/Steam1.png" alt="Factorwave gameplay screenshot">
+            </a>
+            <div class="asset-info">
+              <h3>Gameplay 01</h3>
+              <a class="button" href="assets/screenshots/Steam1.png" download>Download</a>
+            </div>
+          </article>
+          <article class="asset-card">
+            <a href="assets/screenshots/Steam2.png" download>
+              <img src="assets/screenshots/Steam2.png" alt="Factorwave production screenshot">
+            </a>
+            <div class="asset-info">
+              <h3>Gameplay 02</h3>
+              <a class="button" href="assets/screenshots/Steam2.png" download>Download</a>
+            </div>
+          </article>
+          <article class="asset-card">
+            <a href="assets/screenshots/Steam3.png" download>
+              <img src="assets/screenshots/Steam3.png" alt="Factorwave base building screenshot">
+            </a>
+            <div class="asset-info">
+              <h3>Gameplay 03</h3>
+              <a class="button" href="assets/screenshots/Steam3.png" download>Download</a>
+            </div>
+          </article>
+          <article class="asset-card">
+            <a href="assets/Capsules/1080pThumbnail.png" download>
+              <img src="assets/Capsules/1080pThumbnail.png" alt="Factorwave key art thumbnail">
+            </a>
+            <div class="asset-info">
+              <h3>Key Art</h3>
+              <a class="button" href="assets/Capsules/1080pThumbnail.png" download>Download</a>
+            </div>
+          </article>
+          <article class="asset-card logo">
+            <a href="assets/WishlistTransparent-1080p.png" download>
+              <img src="assets/WishlistTransparent-1080p.png"
+                alt="Factorwave wishlist callout with transparent background">
+            </a>
+            <div class="asset-info">
+              <h3>Wishlist 1080p</h3>
+              <a class="button" href="assets/WishlistTransparent-1080p.png" download>Download</a>
+            </div>
+          </article>
+          <article class="asset-card logo">
+            <a href="assets/WishlistTransparent-4k.png" download>
+              <img src="assets/WishlistTransparent-4k.png"
+                alt="Factorwave 4K wishlist callout with transparent background">
+            </a>
+            <div class="asset-info">
+              <h3>Wishlist 4K</h3>
+              <a class="button" href="assets/WishlistTransparent-4k.png" download>Download</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -392,7 +527,8 @@
       <div class="wrap two-col">
         <div>
           <h2>Contact</h2>
-          <p class="lead">For review keys, interviews, and press inquiries, add your preferred contact details here.</p>
+          <p class="lead">For review keys, interviews, and press inquiries, contact Plaza Studio. Join the Discord for
+            announcements and development updates.</p>
         </div>
         <div class="contact-card">
           <h3>Press Contact</h3>
@@ -401,14 +537,19 @@
             <a
               href="https://store.steampowered.com/app/4428900/Factorwave/">store.steampowered.com/app/4428900/Factorwave</a>
           </p>
-          <p>Discord: <a href="">Discord</a></p>
+          <p>YouTube:
+            <a href="https://www.youtube.com/@PlazaStudioDev">youtube.com/@PlazaStudioDev</a>
+          </p>
+          <p>Discord:
+            <a href="https://discord.com/invite/gmHraE9cJn">discord.com/invite/gmHraE9cJn</a>
+          </p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">Factorwave is developed and published by Plaza Studio. Steam metadata checked June 17, 2026.</div>
+    <div class="wrap">Factorwave is developed and published by Plaza Studio.</div>
   </footer>
 </body>
 
