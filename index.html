@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Factorwave Press Kit</title>
+  <meta name="description"
+    content="Press kit for Factorwave, a fast-paced factory builder with combat and territorial logistics by Plaza Studio.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #111317;
+      --panel: #191d23;
+      --panel-soft: #20262d;
+      --text: #f1f4f7;
+      --muted: #aeb7c2;
+      --line: #303844;
+      --accent: #f0b84a;
+      --accent-2: #54c6a1;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #15191f;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 72px;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 64px 0 56px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+      gap: 36px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 18px;
+      font-size: clamp(44px, 8vw, 82px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel-soft);
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: #d99d32;
+      background: var(--accent);
+      color: #17120a;
+    }
+
+    .media-frame {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.26);
+    }
+
+    .media-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .placeholder {
+      display: grid;
+      min-height: 260px;
+      place-items: center;
+      padding: 28px;
+      border: 1px dashed #596371;
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    main section {
+      padding: 48px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.65fr);
+      gap: 36px;
+      align-items: start;
+    }
+
+    .copy p {
+      color: var(--muted);
+    }
+
+    .facts {
+      display: grid;
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--line);
+    }
+
+    .fact {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 16px;
+      padding: 14px 16px;
+      background: var(--panel);
+    }
+
+    .fact strong {
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .feature,
+    .contact-card {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .feature p,
+    .contact-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .asset-grid .placeholder {
+      min-height: 190px;
+    }
+
+    footer {
+      padding: 28px 0 44px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 840px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+
+      .hero-grid,
+      .two-col,
+      .features,
+      .asset-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 44px;
+      }
+
+      .fact {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Factorwave Press Kit</div>
+      <nav class="nav-links" aria-label="Press kit sections">
+        <a href="#overview">Overview</a>
+        <a href="#facts">Facts</a>
+        <a href="#assets">Assets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Factory automation, combat, and territorial logistics</p>
+        <h1>Factorwave</h1>
+        <p class="lead">Fast-paced factory builder with combat and territorial logistics. Automate production, unlock
+          powerful Sector Hub bonuses, defend your infrastructure, and expand across a hostile planet.</p>
+        <div class="actions">
+          <a class="button primary" href="https://store.steampowered.com/app/4428900/Factorwave/">View on Steam</a>
+          <a class="button" href="#assets">Download assets</a>
+        </div>
+      </div>
+      <div class="media-frame">
+        <img
+          src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4428900/2e89af1c037ef4dc6de133440dc3d2a65c920228/header.jpg?t=1781663770"
+          alt="Factorwave key art from Steam">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="overview">
+      <div class="wrap two-col">
+        <div class="copy">
+          <h2>About the Game</h2>
+          <p>Factorwave is a fast-paced factory builder about scaling production while surviving pressure from a hostile
+            planet. Players automate resource chains, protect critical infrastructure, and push their territory outward
+            through Sector Hubs that unlock powerful bonuses.</p>
+          <p>The game blends factory planning with active defense and map control, giving players a compact loop of
+            building, optimizing, expanding, and holding the line.</p>
+        </div>
+        <div class="placeholder">
+          Trailer embed placeholder<br>
+          Add a YouTube, Steam, or local video embed here later.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Key Features</h2>
+        <div class="features">
+          <article class="feature">
+            <h3>Automate Production</h3>
+            <p>Build and refine production systems that keep resources moving under pressure.</p>
+          </article>
+          <article class="feature">
+            <h3>Expand Territory</h3>
+            <p>Claim new ground and use Sector Hub bonuses to shape each run's strategy.</p>
+          </article>
+          <article class="feature">
+            <h3>Defend Infrastructure</h3>
+            <p>Protect factories, routes, and hubs from threats across a hostile planet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="facts">
+      <div class="wrap two-col">
+        <div>
+          <h2>Fact Sheet</h2>
+          <div class="facts" aria-label="Factorwave facts">
+            <div class="fact"><strong>Developer</strong><span>Plaza Studio</span></div>
+            <div class="fact"><strong>Publisher</strong><span>Plaza Studio</span></div>
+            <div class="fact"><strong>Release</strong><span>Coming soon, 2026</span></div>
+            <div class="fact"><strong>Platforms</strong><span>PC via Steam</span></div>
+            <div class="fact"><strong>Genres</strong><span>Indie, Simulation</span></div>
+            <div class="fact"><strong>Modes</strong><span>Single-player</span></div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h3>Short Description</h3>
+          <p>Fast-paced factory builder with combat and territorial logistics. Automate production, unlock powerful
+            Sector Hub bonuses, defend your infrastructure, and expand across a hostile planet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="assets">
+      <div class="wrap">
+        <h2>Media Assets</h2>
+        <div class="asset-grid">
+          <div class="placeholder">Logo placeholder</div>
+          <div class="placeholder">Screenshot placeholder</div>
+          <div class="placeholder">Screenshot placeholder</div>
+          <div class="placeholder">Screenshot placeholder</div>
+          <div class="placeholder">Key art placeholder</div>
+          <div class="placeholder">Trailer thumbnail placeholder</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap two-col">
+        <div>
+          <h2>Contact</h2>
+          <p class="lead">For review keys, interviews, and press inquiries, add your preferred contact details here.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Press Contact</h3>
+          <p>Email: contact@plazastudio.dev</p>
+          <p>Steam:
+            <a
+              href="https://store.steampowered.com/app/4428900/Factorwave/">store.steampowered.com/app/4428900/Factorwave</a>
+          </p>
+          <p>Discord: <a href="">Discord</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Factorwave is developed and published by Plaza Studio. Steam metadata checked June 17, 2026.</div>
+  </footer>
+</body>
+
+</html>
